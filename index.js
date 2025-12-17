@@ -16,6 +16,11 @@ app.get('/uploads/:name', function (req, res) {
         res.send(data);
     });
 });
+
+app.get('/', function (req, res) {
+    res.send("Working fine");
+});
+
 app.listen(3000, (err) => {
     if (err) {
         console.log(err);
